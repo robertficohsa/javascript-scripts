@@ -9,3 +9,19 @@ ejemplo de ejecucion:
 ```bash
 node dupplicatedEntries.js example-input-file.txt
 ```
+> input:
+
+```txt
+entry1
+entry2
+entry3
+entry1
+entry4
+entry5
+```
+
+> output:
+
+```
+['entry1\r','entry1\r']
+```
