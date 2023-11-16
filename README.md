@@ -9,7 +9,7 @@ ejemplo de ejecucion:
 ```bash
 node dupplicatedEntries.js example-input-file.txt
 ```
-> input:
+> input: [example-input-file.txt](./example-input-file.txt)
 
 ```txt
 entry1
