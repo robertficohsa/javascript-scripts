@@ -14,9 +14,11 @@ fs.readFile(process.argv[2],'utf8',(err,data)=>{
 		// statements
 		const entries = services.filter(s=>s == service)
 		if (entries.length >= 2) {
-			duplicatedServices.push(service)
+			if (!duplicatedServices.includes(service)) {
+				duplicatedServices.push(service)
+			}
 		}
 	});
-	console.log(duplicatedServices)
+	console.log(duplicatedServices.join("\n"))
 })
 
